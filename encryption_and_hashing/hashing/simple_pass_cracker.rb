@@ -1,4 +1,4 @@
-# WIP
+## WIP: This file is a work-in-progress
 
 # require 'digest/md5'
 # require 'gentle_brute'
