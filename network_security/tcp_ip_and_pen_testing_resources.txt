@@ -11,7 +11,7 @@ InfoSec Introduction:
 Info on Security tools:
   * http://sectools.org/
 
-Powerful tool for network discovery and security auditing:
+NMAP, a powerful tool for network discovery and security auditing:
   * https://nmap.org/
   * https://nmap.org/download.html
   * Zenmap GUI for nmap can be installed via nmap dmg
@@ -35,6 +35,34 @@ Fun
 
 Tools
 =====
+
+Network Mapping/Scanning
+------------------------
+
+NMAP:
+  * Powerful multi-platform tool created by a really smart guy, Gordon Lyon
+  * See in-depth info in ./nmap.txt file
+  * Security scanner detects hosts and services on a network, i.e. "mapping"
+  * Sends specially crafted packets to hosts and then analyzes responses
+  * Number of useful tools for probing networks, including OS and vulnerability detection
+  * Port scanning - enumerates open ports on target hosts (useful for auditing)
+  * OS Detection - determines OS and hardware characteristics of network devices
+  * Other info on targets like reverse DNS names, device types, MAC addresses
+  * Auditing the security of a device or firewall by identifying network connections which can be made to, or through it
+  * Pen Testing - Popular for identifying and exploiting vulnerabilities
+  * ZenMap GUI, see example: https://en.wikipedia.org/wiki/Nmap#/media/File:Zenmap.png
+Docs and Info:
+  * https://nmap.org/book/man.html
+  * https://en.wikipedia.org/wiki/Nmap
+eBook on NMAP by Developer:
+  * http://www.amazon.com/dp/0979958717?tag=secbks-20
+Download:
+  * https://nmap.org/download.html
+Compile Zenmap and NMAP from Source Code:
+  * https://nmap.org/book/inst-macosx.html#inst-macosx-source
+About Fydor/Gordon Lyon:
+  * http://insecure.org/fyodor/
+
 
 Network Packet Analysis
 -----------------------
