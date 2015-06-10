@@ -1,6 +1,6 @@
-The following is a list of essential tools for securing your Mac computer and encrypting your communications.
+The following is a list of essential tools for securing your Mac computer and encrypting your sensitive data.
 
-All of these programs are open-source and highly-regarded.
+Nearly all of these programs are open-source, and they're all highly-regarded.
 
 General System Configuration Tips
 =================================
