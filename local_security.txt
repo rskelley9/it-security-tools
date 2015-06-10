@@ -1,4 +1,4 @@
-The following is a list of essential encryption and related security tools security and network-related for Mac OS X.
+The following is a list of essential tools for securing your Mac computer and encrypting your communications.
 
 All of these programs are open-source and highly-regarded.
 
