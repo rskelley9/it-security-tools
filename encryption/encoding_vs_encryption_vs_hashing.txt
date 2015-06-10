@@ -1,0 +1,38 @@
+Encrypting and hashing are often confused with one another. This file summarizes the differences between the 3 concepts.
+
+Sources:
+* https://stackoverflow.com/questions/4948322/fundamental-difference-between-hashing-and-encryption-algorithms
+* https://danielmiessler.com/study/encoding_encryption_hashing/
+
+Encoding
+--------
+* Transforms data into another format using a publicly-available scheme
+* Can be easily be reversed using same algorithm that encoded data (no key)
+* Used to make data *more consumable* across different systems
+
+Encryption
+----------
+* Used for maintaining *confidentiality* of data
+* Transforms data into another format in such a way that only specified/priveleged individual(s) possess the means to reverse the transformation and retrieve the data in its original format.
+* Reversal of transformaion to plain text requires a "secret" key
+* Multiple input:key pairs that might generate the same output (unlike hashes)
+* Public key made available to anyone that wants to send encrypted info to owner of PK
+* Private key kept secret so only owner can decrypt encrypted info
+* Ex: AES, RSA
+
+Use Case:
+
+Hashing
+-------
+* Used for ensuring data *integrity*, i.e. if someone changes X, we know X has been changed
+* Transforms arbitrary input into a fixed-length string
+* One-way mapping algorithm, the output nearly impossible to reverse into the input
+* Same input always produces same output
+* Defeat rainbow tables by using unique *salt* concatenated to end of hash
+* Multiple disparate/totally different inputs should not produce same output
+* ANY MODIFICATON OF GIVEN INPUT SHOULD LEAD TO DRASTIC CHANGE IN OUTPUT
+* Ex: SHA-1, MD5
+
+Uses Case1: Storing passwords in database, and then authenticating user-entered password by hashing it, and comparing the hashed value to hashed value stored in database.
+
+Use Case2: Hashing email message text and signing hash before sending to recipient. Recipient then creates hash of text and compares that to signed hash received from sender to determine whether email message has been modified or not.
