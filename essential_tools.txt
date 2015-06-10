@@ -5,7 +5,7 @@ All of these programs are open-source and highly-regarded.
 General System Configuration Tips
 =================================
 
-* Make sure your Firewall is on
+* Make sure your Firewall is on: https://support.apple.com/en-us/HT201642
 * Set GateKeeper to only allow installation of apps created by identified developers
 * Encrypt your filesystem with FileVault or another tool
 * Manage your passwords with a password manager that uses strong encryption algorithm
@@ -39,6 +39,9 @@ DMG Installation Package:
 EXE Install:
 * https://www.grc.com/misc/truecrypt/TrueCrypt%20Setup%207.1a.exe
 
+File Encryption
+===============
+
 ## Crypt3 (OS X)
 Summary:
 * Simple desktop app for encrypting/decrypting files and folders using AES-256
@@ -48,7 +51,7 @@ Summary:
 Public-Key Encryption and Key Management
 ========================================
 
-## GPG Tools/MacGPG (OS X)
+## GPG Tools incl. MacGPG (OS X)
 Summary:
 * Suite of tools using implementation of GnuPG for encrypting communications and files
 * Uses symmetric encryption to exchange keys
@@ -64,6 +67,41 @@ Docs:
 * http://support.gpgtools.org/kb/how-to/first-steps-where-do-i-start-where-do-i-begin-setup-gpgtools-create-a-new-key-your-first-encrypted-mail
 * https://gpgtools.tenderapp.com/kb/how-to/watch-screencast
 
+General-Purpose Cryptography
+============================
+
+## PGP Impleneted via MacGPG
+* GPG Tools (see above) includes MacGPG
+* Strong open-source encryption mechanism
+* Uses algorithms DSA (Digital Signature Algorithm) for authenticating and Elgamal (Also called ELG) for encrypting data
+* More about OpenPGP: http://en.wikipedia.org/wiki/Pretty_Good_Privacy#OpenPGP
+Download:
+* sourceforge.net/projects/macgpg/
+Download with GPG Tools for Mac:
+* https://releases.gpgtools.org/GPG_Suite-2015.03-b6.dmg
+How-To Build on Mac:
+* http://macgpg.sourceforge.net/docs/howto-build-gpg-osx.txt.asc
+Tutorial:
+* http://www.reactive.io/tips/2008/02/18/working-with-pgp-and-mac-os-x/
+
+## OpenSSL
+* Toolkit implenting SSL/TLS protocols
+* Includes full-strength cryptography library
+* Symmetric encryption, public key cryptography and key agreement, certificate handling, cryptographic hash functions and a cryptographic pseudo-random number generator
+* Symmetric ciphers blowfish, cast, des, idea, rc2, rc4, rc5
+* Generate hashed passwords
+* RSA utility for generating keys, signing, verifying, encrypting, decrypting and key management
+* DSA, PKCS data management
+* Generate DSA, Diffie-Hellman parameters
+* Z509 certificate data management and verification
+Docs:
+* https://www.openssl.org/docs/
+* https://wiki.openssl.org/index.php/Main_Page
+Tutorials:
+* https://www.openssl.org/docs/HOWTO/
+* https://www.feistyduck.com/books/openssl-cookbook/
+libcrypto docs:
+* https://www.openssl.org/docs/crypto/crypto.html
 
 Browser Security
 ================
