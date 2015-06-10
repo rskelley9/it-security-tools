@@ -1,6 +1,6 @@
 # Network Security Tools
 
-Here you will find a useful collection of TCP/IP, network security tools and information.
+Here you will find a useful collection of TCP/IP, network security tools and information. Why? Because I share my notes.
 
 ## Navigating this Repo:
 + For Public Key Encryption tools look in /encryption/pke
