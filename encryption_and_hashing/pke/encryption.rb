@@ -80,13 +80,14 @@ module Encryption
     end
 
     # Public Key encryption
+    # Generates cloud app's public key
     def generate_public_key!
       public_key_file = 'public.pem'
-      @public_key = OpenSSL::PKey::RSA.new(File.read(public_key_file))
+      @@public_key = OpenSSL::PKey::RSA.new(File.read(public_key_file))
     end
 
     def pub_encrypt(string)
-      @public_key ||= generate_public_key!
+      @@public_key ||= generate_public_key!
       encrypted_string = Base64.encode64(@public_key.public_encrypt(string))
     end
 
@@ -118,14 +119,14 @@ module Encryption
     # returns key as pem or other format
     # {"public": {"N":12323512312412314, "E": 63432446, "D": 72423423423423"}, "private": ...}
     def return_public_key(format="params")
-      @public_key ||= generate_public_key!
+      @@public_key ||= generate_public_key!
       if format == "params" or format == nil
         key_hash = @public_key.params
         return formatted_key_hash = Hash[key_hash.map{|k, v| [k, v.to_s] } ]
       elsif format == "pem"
-        return @public_key.to_pem
+        return @@public_key.to_pem
       else
-        return @public_key.send("to_"+ format)
+        return @@public_key.send("to_"+ format)
       end
     end
   end # class methods
