@@ -1,1 +1,1 @@
-See 'Browser Security' section in [essential_tools.txt](../essential_tools.txt)
+See 'Browser Security' section in [local_security.txt](../local_security.txt)
