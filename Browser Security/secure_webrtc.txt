@@ -1,0 +1,26 @@
+
+Resources
+---------
+
+Project on Github:
+  https://github.com/diafygi/webrtc-ips#stun-ip-address-requests-for-webrtc
+
+Demo:
+  https://diafygi.github.io/webrtc-ips/
+
+Info
+----
+
+* Firefox and Chrome have implemented WebRTC that allow requests to STUN servers be made that will return the local and public IP addresses for the user.
+* These request results are available to javascript, so you can now obtain a users local and public IP addresses in javascript.
+* This demo is an example implementation of that.
+* These STUN requests are made outside of the normal XMLHttpRequest procedure, so they are not visible in the developer console or able to be blocked by plugins such as AdBlockPlus or Ghostery.
+* This makes these types of requests available for online tracking if an advertiser sets up a STUN server with a wildcard domain.
+
+The Fix
+-------
+These are directions for preventing WebRTC checks on your browser.
+
+FireFox:
+1. about:config
+2. set `media.peerconnection.enabled` to false
