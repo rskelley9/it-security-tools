@@ -1,0 +1,26 @@
+This document contains step-by-step directions for using GnuPG to verify a file's signature.
+
+GPG Verification
+----------------
+
+1. GPG Keychain makes automatically import a key simple. You simple retrieve keys from key server using the GPG Keychain GUI 'Lookup Key' button, then enter KeyID in prompt
+	* Alternatively, you may also download the keyfile from the server and import it:
+	```
+	gpg --keyid-format long --import [key]
+	```
+2. Download the .asc signature file into ~/Downloads
+```
+wget https://..../dist/sigs/blah.dmg.asc
+```
+3. Download the file your verifying into ~/Downloads
+4. Verify the signed file with the signature just imported to your keychain
+```
+gpg --verify 'blah.dmg.asc'
+```
+
+Sample Output of Godo Signature:
+```
+gpg: assuming signed data in 'nmap-6.49BETA1.dmg'
+gpg: Signature made Wed Jun  3 11:50:26 2015 EDT using DSA key ID 7Z9355B0
+gpg: Good signature from "Test Project Signing Key (http://www...org/)" [unknown]
+```
