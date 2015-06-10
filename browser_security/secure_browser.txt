@@ -1,0 +1,1 @@
+See 'Browser Security' section in [essential_tools.txt](../essential_tools.txt)
