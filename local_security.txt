@@ -111,12 +111,34 @@ Summary:
 * Firefox is a free, open-source browser created and maintained by the Mozilla community.
 * Fewer unknown, unpatched security vulnerabilities than Internet Explorer, Chrome: http://www.securityweek.com/dirty-dozen-list-top-desktop-applications-security-vulnerabilities
 * Resource hungry compared to Chrome, Safari but doesn't suffer from security leaks
-
 Important Plugins:
 * HTTPS Everywhere: https://www.eff.org/https-everywhere
 * Ad-Block: https://addons.mozilla.org/en-us/firefox/addon/adblock-plus/
 * NoScript: https://noscript.net/
 * Ghostery: https://www.ghostery.com/en/
+
+Secure Remote Host Access
+=========================
+
+## OpenSSH
+Summary:
+  * Installed on Mac OS X by default
+  * Encrypted communications between two untrusted hosts over an insecure network
+  * Log into and execute remote commands on a remote machine securely
+  * Useful for admins to manage remote systems
+  * Secures traffic unlike FTP, replaces it with SFTP
+  * Supports 3DES, Blowfish, AES and arcfour as encryption algorithms
+  * SFTP Client and Server Support
+  * Strong authentication protects against security problems like IP spoofing, DNS spoofing
+  * X11 forwarding allows the encryption of remote X windows traffic, so that nobody can snoop on your remote xterms or insert malicious commands.
+  * Port forwarding of TCP/IP connections to remote machine over encrypted channel
+Informative Book:
+  * https://www.michaelwlucas.com/nonfiction/ssh-mastery
+Manually Generating SSH Key:
+  * https://docs.joyent.com/jpc/getting-started-with-your-joyent-cloud-account/generating-an-ssh-key/generating-an-ssh-key-manually/manually-generating-your-ssh-key-in-mac-os-x
+Docs:
+  * http://www.openssh.com/manual.html
+  * http://sourceforge.net/p/forge/documentation/SSH/
 
 VPN
 ===
