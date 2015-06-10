@@ -1,0 +1,60 @@
+This file contains in-depth information on NMap. NMap is a powerful network security scanner created by Gordon Lyon a.k.a Fyodor. Free and open source, it's such a valuable contribution to society that it deserves its own text file in this repo.
+
+## What is it and What Does it Do?
+
+  * Powerful multi-platform tool created by a really smart guy, Gordon Lyon
+  * Used to detects hosts and services on a network, essentially "mapping" a network
+  * It probes by sending specially crafted packets to hosts and then analyzes the subsequent responses
+  * It includes a number of useful tools for probing networks, including ping sweeps, OS and vulnerability detection, making it a favorite for hackers and IT security people
+  * nmap-services database of more than 2,200 well-known services
+  * Port scanning - enumerates open ports on target hosts (useful for auditing)
+  * Operating System Detection - determines OS and hardware characteristics of network devices
+  * Other info on targets like reverse DNS names, device types, MAC addresses
+  * Auditing the security of a device or firewall by identifying network connections which can be made to, or through it
+  * Pen Testing - Popular for identifying and exploiting vulnerabilities
+  * ZenMap GUI, see example: https://en.wikipedia.org/wiki/Nmap#/media/File:Zenmap.png
+  * Version detection: https://nmap.org/book/vscan.html
+
+## Tools Included in NMap suite
+
+NCat:
+  * https://nmap.org/ncat/
+  * Reimplementation of Netcat, reads and writes data across TCP, UDP from command line
+  * Redirect TCP and UDP ports to other sites
+  * IPV6 and SSL support
+  * Proxy connections via SOCKS4, HTTP proxies and optional proxy authentication
+  * Port binding to accept incoming connections
+
+NDiff:
+  * https://nmap.org/ndiff/
+  * Compare scan results
+
+NPing:
+  * https://nmap.org/nping/
+  * Packet generation and results analysis
+
+Zenmap:
+  * Advanced Nmap GUI and results viewer
+  * I haven't gotten it working on OSX 10.10
+
+## Documentation and Info
+  Official Documentation: https://nmap.org/book/man.html
+  Wikipedia Page: https://en.wikipedia.org/wiki/Nmap
+  NMap Network Scanning ebook by Gordon Lyon: http://www.amazon.com/dp/0979958717?tag=secbks-20
+  About Fydor/Gordon Lyon, the Creator of Nmap: http://insecure.org/fyodor/
+
+## Tutorials
+  NMap Cheat Sheet/Examples: https://highon.coffee/blog/nmap-cheat-sheet/
+  Examples of using nmap with scripts: http://www.behindthefirewalls.com/2013/08/nmap-640-released-how-to-install-and.html
+
+## Download and Installation
+
+  Download Page: https://nmap.org/download.html
+  Instructions on Compiling Zenmap and NMAP from Source Code: https://nmap.org/book/inst-macosx.html#inst-macosx-source
+
+## Other
+
+  Fictional story written by NMap creator on hacking: http://insecure.org/stc/
+
+
+
