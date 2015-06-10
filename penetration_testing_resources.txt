@@ -1,0 +1,78 @@
+This file contains useful links and information about the latest software for network security and penetration testing. Most of the software listed is free/open-source.
+
+Links
+=====
+
+Network Security and Pen Testing
+--------------------------------
+Info on Security tools:
+* http://sectools.org/
+
+Powerful tool for network discovery and security auditing:
+* https://nmap.org/
+* https://nmap.org/download.html
+* Zenmap GUI for nmap can be installed via nmap dmg
+
+NMAP Forum:
+* http://seclists.org/nmap-dev/
+
+Packet Tracing
+--------------
+
+Packet Tracing on OS X with tcpdump:
+* https://developer.apple.com/library/mac/qa/qa1176/_index.html
+
+WireShark:
+* https://en.wikipedia.org/wiki/Wireshark
+* https://www.wireshark.org/
+
+Fun
+---
+* http://telehack.com/
+
+Tools
+=====
+
+Packet Analysis
+---------------
+
+WireShark:
+  * Requires X11 installed on Mac OS X.
+  * Multi-platform, supports OS X, Windows, Linux
+  * Includes tshark, a tcdump command-line program
+  * Analyze live network data or loaded from capture file
+  * Extremely powerful, can set to level of packet detail necessary
+  * Rich display filter language and the ability to view the reconstructed TCP session stream
+  * Hundreds of protocols and media types supported
+
+
+Ettercap:
+  * Multi-platform, supports OS X, Windows, Linux
+  * Examine traffic from live network connections
+  * On-the-fly content filtering
+  * Active and passive dissection of numerous protocols including *ciphered protocols*
+  * Suite for **man in the middle attacks on LAN**.
+
+CharlesProxy (Paid):
+  * Multi-platform, supports OS X, Windows, Linux
+  * HTTP proxy/monitor/reverse proxy
+  * Simple program with Beautiful GUI
+  * View and record all of HTTP/HTTPS traffic between machine and the Internet, including requests, responses and HTTP headers
+  * View plain text SSL requests and responses 
+  * Has bandwidth throttling to simulate slower connections
+  * AJAX debugging to view XML and JSON requests and responses as a tree or as text
+  
+Kismet:
+* See entry in 'Wireless Discovery' section below
+  
+Wireless Discovery
+-----------------
+
+Kismet:
+* Console-based (ncurses) tool for 802.11 layer-2 wireless network detection
+* Uses **passive** network identification
+* Includes packet sniffer and intrusion detection system
+* Decloak hidden/non-beaconing networks
+* Detect network IP blocks by sniffing TCP, UDP, ARP, DHCP packets 
+* Log traffic in Wireshark/tcpdump compatible format for more in-depth analysis
+* Features for plotting detected networks, estimated ranges on downloaded maps
