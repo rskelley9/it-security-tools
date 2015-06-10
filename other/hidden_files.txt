@@ -1,9 +1,24 @@
 This document includes information for hiding/showing hidden files on Mac OS X.
 
-Commands
---------
+## Commands
 
 List all files in the current directory including those that would normally be invisible
 ```
 ls -a
+```
+
+## Alias for Hiding and Showing Files
+
+```
+alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
+
+alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
+```
+
+## Delete Hidden File
+
+```
+showFiles
+
+sudo rm -r [FileName]
 ```
