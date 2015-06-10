@@ -20,7 +20,7 @@ Encryption
 * Private key kept secret so only owner can decrypt encrypted info
 * Ex: AES, RSA
 
-Use Case:
+Use Case1: SSH uses public-private key pairs to secure network connection between user and remote computer. Instead of password authentication, SSH can use public-private key pair to authenticate user. User's public key is placed on remote computer, and SSH uses private key to verify a match. Private key however is never transported, it's kept secret on the user's computer.
 
 Hashing
 -------
