@@ -1,0 +1,9 @@
+This document includes information for hiding/showing hidden files on Mac OS X.
+
+Commands
+--------
+
+List all files in the current directory including those that would normally be invisible
+```
+ls -a
+```

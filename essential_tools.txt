@@ -1,0 +1,97 @@
+The following is a list of essential encryption and related security tools security and network-related for Mac OS X.
+
+All of these programs are open-source and highly-regarded.
+
+General System Configuration Tips
+=================================
+
+* Make sure your Firewall is on
+* Set GateKeeper to only allow installation of apps created by identified developers
+* Encrypt your filesystem with FileVault or another tool
+* Manage your passwords with a password manager that uses strong encryption algorithm
+* Encrypt sensitive emails
+* Install well-regarded AV and anti-malware programs. ClamXAV, Sophos are decent free offerings
+
+Disk Encryption
+===============
+
+## FileVault (OS X)
+Summary:
+* FileVault comes pre-installed on Mac OS X Lion and later versions.
+* Uses AES-128 bit encryption to protect your startup disk
+Docs:
+* https://support.apple.com/en-us/HT204837
+
+## TrueCrypt (Multi-Platform)
+Summary:
+* A venerable tool for encrypting documents, partitions or your entire filesystem
+* On-the-fly encrypt/decrypt without user intervention
+* Hidden volume feature allows you to hide a second layer of sensitive content with plausible deniability of existence
+* No longer maintained as of 7.1, still popular as of 2015
+Docs:
+* https://www.grc.com/misc/truecrypt/TrueCrypt%20User%20Guide.pdf
+* https://www.grc.com/misc/truecrypt/truecrypt.htm
+Source Code:
+* https://www.grc.com/misc/truecrypt/TrueCrypt%207.1a%20Source.zip
+* https://www.grc.com/misc/truecrypt/TrueCrypt%207.1a%20Source.tar.gz
+DMG Installation Package:
+* https://www.grc.com/misc/truecrypt/TrueCrypt%207.1a%20Mac%20OS%20X.dmg
+EXE Install:
+* https://www.grc.com/misc/truecrypt/TrueCrypt%20Setup%207.1a.exe
+
+## Crypt3 (OS X)
+Summary:
+* Simple desktop app for encrypting/decrypting files and folders using AES-256
+* Automatically shred file after encryption
+
+
+Public-Key Encryption and Key Management
+========================================
+
+## GPG Tools/MacGPG (OS X)
+Summary:
+* Suite of tools using implementation of GnuPG for encrypting communications and files
+* Uses symmetric encryption to exchange keys
+* GPG Keychain for managing OpenPGP keys
+* GPG Services for encrypt/decrypt, sign/verify and import keys from text selections, files, folders etc...
+* GPG Mail Email client plugin for encrypting messages
+Download Latest Release:
+* https://releases.gpgtools.org/GPG_Suite-2015.03-b6.dmg
+Download Signature:
+* https://releases.gpgtools.org/GPG_Suite-2015.03-b6.dmg.sig
+Docs:
+* http://support.gpgtools.org/kb/how-to
+* http://support.gpgtools.org/kb/how-to/first-steps-where-do-i-start-where-do-i-begin-setup-gpgtools-create-a-new-key-your-first-encrypted-mail
+* https://gpgtools.tenderapp.com/kb/how-to/watch-screencast
+
+
+Browser Security
+================
+
+## Firefox Browser (Multi-Platform)
+Summary:
+* Firefox is a free, open-source browser created and maintained by the Mozilla community.
+* Fewer unknown, unpatched security vulnerabilities than Internet Explorer, Chrome: http://www.securityweek.com/dirty-dozen-list-top-desktop-applications-security-vulnerabilities
+* Resource hungry compared to Chrome, Safari but doesn't suffer from security leaks
+
+Important Plugins:
+* HTTPS Everywhere: https://www.eff.org/https-everywhere
+* Ad-Block: https://addons.mozilla.org/en-us/firefox/addon/adblock-plus/
+* NoScript: https://noscript.net/
+* Ghostery: https://www.ghostery.com/en/
+
+VPN
+===
+Note: There's no way to guarantee anonymity with a VPN. Most VPN's log user data in some form, and it's impossible to determine exactly what data they store about your network traffic--even if they say they don't log anything. With that said, VPN's are still useful for protecting your computer from malware, keeping your data private and hiding your location.
+
+## HSSElite
+Summary:
+* US-based, so must comply with US Law including Patriot Act
+* Good Performance
+* Masks IP Address
+* Powerful, proprietary encryption algorithm
+* Uses its own DNS servers
+* Servers in 9 different countries
+* Allows P2P
+* DNS Leak failsafes
+* Malware packages protect 3.5 million+ malware threats, as well as phishing
