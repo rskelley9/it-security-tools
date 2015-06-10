@@ -5,6 +5,9 @@ Links
 
 Network Security and Pen Testing
 --------------------------------
+InfoSec Introduction:
+* https://en.wikipedia.org/wiki/Information_security
+
 Info on Security tools:
 * http://sectools.org/
 
@@ -33,8 +36,8 @@ Fun
 Tools
 =====
 
-Packet Analysis
----------------
+Network Packet Analysis
+-----------------------
 
 WireShark:
   * Requires X11 installed on Mac OS X.
@@ -45,6 +48,10 @@ WireShark:
   * Rich display filter language and the ability to view the reconstructed TCP session stream
   * Hundreds of protocols and media types supported
 
+TCPDump:
+  * Displays network traffic on command line in a raw way, placing analytical burden on human
+  * Great learning tool
+  * A great primer: https://danielmiessler.com/study/tcpdump/
 
 Ettercap:
   * Multi-platform, supports OS X, Windows, Linux
@@ -58,13 +65,13 @@ CharlesProxy (Paid):
   * HTTP proxy/monitor/reverse proxy
   * Simple program with Beautiful GUI
   * View and record all of HTTP/HTTPS traffic between machine and the Internet, including requests, responses and HTTP headers
-  * View plain text SSL requests and responses 
+  * View plain text SSL requests and responses
   * Has bandwidth throttling to simulate slower connections
   * AJAX debugging to view XML and JSON requests and responses as a tree or as text
-  
+
 Kismet:
 * See entry in 'Wireless Discovery' section below
-  
+
 Wireless Discovery
 -----------------
 
@@ -73,6 +80,6 @@ Kismet:
 * Uses **passive** network identification
 * Includes packet sniffer and intrusion detection system
 * Decloak hidden/non-beaconing networks
-* Detect network IP blocks by sniffing TCP, UDP, ARP, DHCP packets 
+* Detect network IP blocks by sniffing TCP, UDP, ARP, DHCP packets
 * Log traffic in Wireshark/tcpdump compatible format for more in-depth analysis
 * Features for plotting detected networks, estimated ranges on downloaded maps
