@@ -20,7 +20,7 @@ gpg --verify 'blah.dmg.asc'
 
 Sample Output of Godo Signature:
 ```
-gpg: assuming signed data in 'nmap-6.49BETA1.dmg'
+gpg: assuming signed data in 'blah.dmg'
 gpg: Signature made Wed Jun  3 11:50:26 2015 EDT using DSA key ID 7Z9355B0
 gpg: Good signature from "Test Project Signing Key (http://www...org/)" [unknown]
 ```
