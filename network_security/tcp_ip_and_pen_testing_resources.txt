@@ -6,15 +6,15 @@ Links
 Network Security and Pen Testing
 --------------------------------
 InfoSec Introduction:
-* https://en.wikipedia.org/wiki/Information_security
+  * https://en.wikipedia.org/wiki/Information_security
 
 Info on Security tools:
-* http://sectools.org/
+  * http://sectools.org/
 
 Powerful tool for network discovery and security auditing:
-* https://nmap.org/
-* https://nmap.org/download.html
-* Zenmap GUI for nmap can be installed via nmap dmg
+  * https://nmap.org/
+  * https://nmap.org/download.html
+  * Zenmap GUI for nmap can be installed via nmap dmg
 
 NMAP Forum:
 * http://seclists.org/nmap-dev/
@@ -23,15 +23,15 @@ Packet Tracing
 --------------
 
 Packet Tracing on OS X with tcpdump:
-* https://developer.apple.com/library/mac/qa/qa1176/_index.html
+  * https://developer.apple.com/library/mac/qa/qa1176/_index.html
 
 WireShark:
-* https://en.wikipedia.org/wiki/Wireshark
-* https://www.wireshark.org/
+  * https://en.wikipedia.org/wiki/Wireshark
+  * https://www.wireshark.org/
 
 Fun
 ---
-* http://telehack.com/
+  * http://telehack.com/
 
 Tools
 =====
@@ -97,22 +97,22 @@ Wireless Password Audit
 -----------------------
 
 AirCrack:
-* A suite of tools for 802.11a/b/g WEP and WPA cracking.
-* Implementaton of top cracking algorithms to recover wireless keys once enough encrypted packets have been gathered
-* Suite comprises over a dozen discrete tools
-* Includes airodump 802.11 packet capturer, aireplay 802.11 packet injection program
-* aircrack for static WEP and WPA-PSK cracking
-* decrypts WEP/WPA capture files with airdecap
+  * A suite of tools for 802.11a/b/g WEP and WPA cracking.
+  * Implementaton of top cracking algorithms to recover wireless keys once enough encrypted packets have been gathered
+  * Suite comprises over a dozen discrete tools
+  * Includes airodump 802.11 packet capturer, aireplay 802.11 packet injection program
+  * aircrack for static WEP and WPA-PSK cracking
+  * decrypts WEP/WPA capture files with airdecap
 
 
 Wireless Discovery
 -----------------
 
 Kismet:
-* Console-based (ncurses) tool for 802.11 layer-2 wireless network detection
-* Uses **passive** network identification
-* Includes packet sniffer and intrusion detection system
-* Decloak hidden/non-beaconing networks
-* Detect network IP blocks by sniffing TCP, UDP, ARP, DHCP packets
-* Log traffic in Wireshark/tcpdump compatible format for more in-depth analysis
-* Features for plotting detected networks, estimated ranges on downloaded maps
+  * Console-based (ncurses) tool for 802.11 layer-2 wireless network detection
+  * Uses **passive** network identification
+  * Includes packet sniffer and intrusion detection system
+  * Decloak hidden/non-beaconing networks
+  * Detect network IP blocks by sniffing TCP, UDP, ARP, DHCP packets
+  * Log traffic in Wireshark/tcpdump compatible format for more in-depth analysis
+  * Features for plotting detected networks, estimated ranges on downloaded maps
