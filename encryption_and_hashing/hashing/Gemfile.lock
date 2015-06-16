@@ -1,0 +1,14 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    curses (1.0.1)
+    gentle_brute (0.0.2)
+    slop (4.1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  curses
+  gentle_brute
+  slop
