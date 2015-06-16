@@ -1,7 +1,7 @@
 About
 -----
 
-This password cracker uses [gentle_brute](https://github.com/jamespenguin/gentle-brute) library to crack MD5 hashed passwords.
+This brute-force password cracker uses [gentle_brute](https://github.com/jamespenguin/gentle-brute), a library to crack MD5 hashed passwords.
 
 Test Run
 --------
