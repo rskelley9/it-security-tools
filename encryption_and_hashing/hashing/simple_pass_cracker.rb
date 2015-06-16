@@ -3,7 +3,13 @@
 require 'digest/md5'
 require 'gentle_brute'
 
-target_hash = '58e53d1324eef6265fdb97b08ed9aadf'
+
+# Set default password hash if user doesn't enter one
+if ARGV[0]
+	target_hash = ARGV[0]
+else
+	target_hash = '58e53d1324eef6265fdb97b08ed9aadf'
+end
 
 word_list = GentleBrute::BruteForcer.new
 
@@ -28,6 +34,6 @@ while true
   end
 
   break if attempt_hash == target_hash
-	puts "Tried #{phrase}, not a match. Still trying to crack..."
+  puts "Tried #{phrase}, not a match. Still trying to crack..."
 
 end
