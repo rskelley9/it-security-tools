@@ -1,0 +1,38 @@
+## Changing Your MAC Address
+
+* Even if you're using a proxy to mask your IP address, you're network administrator can still identify your machine by its unique MAC address. 
+
+* Note that your MAC addresses will be reset once your computer reboots. However, you can create an alias and store it in your ba$h or zsh profile for later use etc...
+
+#### Steps
+
+1a.) List all of the *active* network interfaces on your computer using `pcgrep` and a regular expression. This makes it easier to select the one you want to change. Note that you can find the static IP Address and the MAC Address of each interface via your Mac's Network Preferences as well.
+
+```
+ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'
+```
+
+1b.) To make things easier, you can list only the active network interfaces' names.
+
+```
+ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active' | egrep -o -m 1 '^[^\t:]+'
+```
+
+2.) Generate a new, unique MAC address using the following Ruby script and then print it out to view it.
+
+```
+ezmac=$(ruby -e 'puts (1..6).map{"%0.2X"%rand(256)}.join(":")')
+
+echo ${ezmac}
+```
+
+3.) Change the appropriate network interface's MAC address to the MAC address you just generated. Below, we're changing the MAC address of `en0`.
+
+```
+sudo ifconfig en0 ${ezmac}
+```
+
+4.) Verify that the change was made.
+```
+ifconfig en0
+```
